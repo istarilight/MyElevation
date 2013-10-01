@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.hailong.elevation.client.ElevationClient;
+import com.hailong.elevation.network.ElevationClient;
 import com.hailong.myelevation.R;
 import com.jjoe64.graphview.BarGraphView;
 import com.jjoe64.graphview.GraphView;
@@ -59,18 +59,18 @@ public class ResultActivity extends Activity {
 			      , "GraphViewDemo" // heading  
 			);  
 			graphView.addSeries(exampleSeries); // data  
-			  
-			TextView textView = (TextView) findViewById(R.id.textView1);  
+			 
 			//Uncomment this line for a graph
 			//((RelativeLayout) textView.getParent()).addView(graphView);  
 			System.out.println( elevationFeet.get());
-			TextView text = (TextView) this.findViewById(R.id.textView1);
-			text.setText("Elevation in meters: " +elevationFeet.get());
+			TextView text = (TextView) this.findViewById(R.id.currentElevationText);
+			text.setText("You are currently " +elevationFeet.get() + " feet above sea level.");
+			//TODO data base insert here
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} catch (ExecutionException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		

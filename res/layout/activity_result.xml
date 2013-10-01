@@ -9,7 +9,7 @@
     tools:context=".ResultActivity" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/currentElevationText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -18,5 +18,13 @@
         android:layout_marginTop="18dp"
         android:text="Small Text"
         android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/highestElevationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/currentElevationText"
+        android:layout_centerVertical="true"
+        android:text="TextView" />
 
 </RelativeLayout>

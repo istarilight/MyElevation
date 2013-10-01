@@ -1,4 +1,4 @@
-package com.hailong.elevation.client;
+package com.hailong.elevation.network;
 
 import java.io.IOException;
 import java.io.InputStream;

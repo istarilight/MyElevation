@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 
 		this.setListeners();
-		final Button next = (Button) findViewById(R.id.button1);
+		final Button next = (Button) findViewById(R.id.findMyElevationButton);
 		next.setBackgroundResource(R.drawable.intranet_icon);
 		
 
@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
 
 	private void setListeners(){
 		
-		Button myButton = (Button) findViewById(R.id.button1);
+		Button myButton = (Button) findViewById(R.id.findMyElevationButton);
 		final LocationManager lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE); 
 		
 		final LocationListener locationListener = new LocationListener() {
